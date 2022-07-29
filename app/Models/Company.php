@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Contacts;
 
-class Companies extends Model
+class Company extends Model
 {
     use HasFactory;
     protected $table = 'companies';
@@ -23,6 +23,6 @@ class Companies extends Model
 
     public function contacts()
     {
-	    return $this->hasMany(Contacts::class);
+	    return $this->hasMany(Contact::class);
     }
 }

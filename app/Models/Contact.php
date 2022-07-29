@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Contacts extends Model
+class Contact extends Model
 {
     use HasFactory;
     protected $table = 'contacts';
@@ -17,7 +17,6 @@ class Contacts extends Model
         'name',
         'last_name',
         'phone',
-        'address',
         'email',
         'company_id',
     ];
